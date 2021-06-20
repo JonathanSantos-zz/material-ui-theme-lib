@@ -1,13 +1,13 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
-import { MamakiThemeProvider } from '../theme';
+import { CustomThemeProvider } from '../theme';
 
 export default {
   title: '@material-ui/Button',
   component: Button,
 };
 
-const Template = (args) => <MamakiThemeProvider><Button {...args} /></MamakiThemeProvider>;
+const Template = (args) => <CustomThemeProvider><Button {...args} /></CustomThemeProvider>;
 
 export const Default = Template.bind({});
 Default.args = { children: 'Sou um botão' };
