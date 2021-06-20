@@ -1,1 +1,1 @@
-export { MamakiThemeProvider } from './MamakiThemeProvider';
+export { CustomThemeProvider } from './CustomThemeProvider';

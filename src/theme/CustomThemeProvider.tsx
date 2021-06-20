@@ -5,7 +5,7 @@ import { cardTheme } from './card';
 import { colorTheme } from './color';
 import { inputTheme } from './input';
 
-const mamakiTheme = createMuiTheme({
+const customTheme = createMuiTheme({
   palette: colorTheme,
   overrides: {
     MuiButton: buttonTheme,
@@ -14,4 +14,4 @@ const mamakiTheme = createMuiTheme({
   },
 });
 
-export const MamakiThemeProvider = ({ children }) => <ThemeProvider theme={mamakiTheme}>{ children }</ThemeProvider>;
+export const CustomThemeProvider = ({ children }) => <ThemeProvider theme={customTheme}>{ children }</ThemeProvider>;
